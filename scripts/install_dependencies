@@ -7,4 +7,3 @@ cd /home/ec2-user/python-flask-service
 virtualenv-3.6 environment
 source environment/bin/activate
 pip install -r requirements.txt
-python setup.py install
