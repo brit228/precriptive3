@@ -8,10 +8,10 @@ from flask import Flask, request, Response
 from flaskrun import flaskrun
 
 
-USERNAME = os.environ["USERNAME"]
-PASSWORD = os.environ["PASSWORD"]
-BACKEND_URL = os.environ["BACKEND_URL"]
-AUTH_TOKEN = "hkdgbakuygvbuykasgvbduyk"
+USERNAME = config("USERNAME")
+PASSWORD = config("PASSWORD")
+BACKEND_URL = config("BACKEND_URL")
+AUTH_TOKEN = ""
 
 application = Flask(__name__, static_folder=None)
 
